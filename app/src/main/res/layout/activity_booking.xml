@@ -1,0 +1,343 @@
+
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#FFF9E9"
+    android:gravity="center"
+    android:orientation="vertical"
+    tools:context=".MainActivity">
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@color/cardview_shadow_start_color"
+        android:orientation="vertical">
+
+        <TextView
+            android:id="@+id/textView9"
+            android:layout_width="95dp"
+            android:layout_height="38dp"
+            android:layout_marginTop="4dp"
+            android:layout_marginEnd="158dp"
+            android:layout_marginRight="158dp"
+            android:background="#020202"
+            android:bufferType="normal"
+            android:text="Booking"
+            android:textColor="#FFFFFF"
+            android:textColorHighlight="#880707"
+            android:textSize="24sp"
+            app:autoSizeTextType="uniform"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintTop_toTopOf="parent"
+            tools:ignore="MissingConstraints" />
+
+        <TextView
+            android:id="@+id/textView8"
+            android:layout_width="182dp"
+            android:layout_height="33dp"
+            android:layout_marginStart="114dp"
+            android:layout_marginLeft="114dp"
+            android:layout_marginTop="16dp"
+            android:layout_marginEnd="114dp"
+            android:layout_marginRight="114dp"
+            android:background="#F3EFEF"
+            android:bufferType="normal"
+            android:text="Select the date:"
+            android:textColor="#3F51B5"
+            android:textColorHighlight="#880707"
+            android:textSize="24sp"
+            app:autoSizeTextType="uniform"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/request"
+            tools:ignore="MissingConstraints" />
+
+        <TextView
+            android:id="@+id/textView7"
+            android:layout_width="102dp"
+            android:layout_height="39dp"
+            android:layout_marginStart="16dp"
+            android:layout_marginLeft="16dp"
+            android:layout_marginTop="24dp"
+            android:background="#F3EFEF"
+            android:text="Total Costs:"
+            android:textColor="#3F51B5"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/textView6"
+            tools:ignore="MissingConstraints" />
+
+        <TextView
+            android:id="@+id/textView6"
+            android:layout_width="102dp"
+            android:layout_height="39dp"
+            android:layout_marginStart="16dp"
+            android:layout_marginLeft="16dp"
+            android:layout_marginTop="76dp"
+            android:background="#F3EFEF"
+            android:text="Number Of Days:"
+            android:textColor="#3F51B5"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/Cin"
+            tools:ignore="MissingConstraints" />
+
+        <TextView
+            android:id="@+id/textView5"
+            android:layout_width="89dp"
+            android:layout_height="19dp"
+            android:layout_marginStart="14dp"
+            android:layout_marginLeft="14dp"
+            android:layout_marginTop="25dp"
+            android:layout_marginEnd="14dp"
+            android:layout_marginRight="14dp"
+            android:background="#F3EFEF"
+            android:text="——————————"
+            android:textColor="#000000"
+            app:layout_constraintEnd_toStartOf="@+id/Cout"
+            app:layout_constraintStart_toEndOf="@+id/Cin"
+            app:layout_constraintTop_toBottomOf="@+id/textView8" />
+
+        <TextView
+            android:id="@+id/textView4"
+            android:layout_width="102dp"
+            android:layout_height="39dp"
+            android:layout_marginStart="16dp"
+            android:layout_marginLeft="16dp"
+            android:layout_marginTop="24dp"
+            android:background="#F3EFEF"
+            android:text="Special Request:"
+            android:textColor="#3F51B5"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/textView3"
+            tools:ignore="MissingConstraints" />
+
+        <TextView
+            android:id="@+id/textView3"
+            android:layout_width="102dp"
+            android:layout_height="39dp"
+            android:layout_marginStart="16dp"
+            android:layout_marginLeft="16dp"
+            android:layout_marginTop="24dp"
+            android:background="#F3EFEF"
+            android:text="Number of Guests:"
+            android:textColor="#3F51B5"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/textView2"
+            tools:ignore="MissingConstraints" />
+
+        <TextView
+            android:id="@+id/textView2"
+            android:layout_width="102dp"
+            android:layout_height="39dp"
+            android:layout_marginStart="16dp"
+            android:layout_marginLeft="16dp"
+            android:layout_marginTop="24dp"
+            android:background="#F3EFEF"
+            android:text="Phone Number:"
+            android:textColor="#3F51B5"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/textView"
+            tools:ignore="MissingConstraints" />
+
+        <EditText
+            android:id="@+id/custName"
+            android:layout_width="259dp"
+            android:layout_height="39dp"
+            android:layout_marginStart="26dp"
+            android:layout_marginLeft="26dp"
+            android:layout_marginTop="20dp"
+            android:layout_marginEnd="3dp"
+            android:layout_marginRight="3dp"
+            android:background="#F3EFEF"
+            android:hint="name"
+            android:singleLine="true"
+            android:textColor="#000000"
+            android:textColorHint="#000000"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toEndOf="@+id/textView"
+            app:layout_constraintTop_toBottomOf="@+id/textView9"
+            tools:ignore="MissingConstraints" />
+
+        <EditText
+            android:id="@+id/phoneNo"
+            android:layout_width="259dp"
+            android:layout_height="39dp"
+            android:layout_marginStart="26dp"
+
+            android:layout_marginLeft="26dp"
+            android:layout_marginTop="24dp"
+            android:layout_marginEnd="3dp"
+            android:layout_marginRight="3dp"
+            android:background="#F3EFEF"
+            android:hint="Phone Number"
+            android:singleLine="true"
+            android:textColor="#000000"
+            android:textColorHint="#000000"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toEndOf="@+id/textView2"
+            app:layout_constraintTop_toBottomOf="@+id/custName"
+            tools:ignore="MissingConstraints" />
+
+        <EditText
+            android:id="@+id/numOfG"
+            android:layout_width="259dp"
+            android:layout_height="39dp"
+
+            android:layout_marginStart="26dp"
+            android:layout_marginLeft="26dp"
+            android:layout_marginTop="24dp"
+            android:layout_marginEnd="3dp"
+            android:layout_marginRight="3dp"
+            android:background="#F3EFEF"
+            android:hint="number of Guests"
+            android:singleLine="true"
+            android:textColor="#000000"
+            android:textColorHint="#000000"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toEndOf="@+id/textView3"
+            app:layout_constraintTop_toBottomOf="@+id/phoneNo" />
+
+        <EditText
+            android:id="@+id/request"
+            android:layout_width="259dp"
+            android:layout_height="39dp"
+            android:layout_marginStart="26dp"
+            android:layout_marginLeft="26dp"
+            android:layout_marginTop="24dp"
+            android:layout_marginEnd="3dp"
+            android:layout_marginRight="3dp"
+            android:background="#F3EFEF"
+            android:hint="Special request"
+            android:singleLine="true"
+            android:textColor="#000000"
+            android:textColorHint="#000000"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toEndOf="@+id/textView4"
+            app:layout_constraintTop_toBottomOf="@+id/numOfG" />
+
+        <EditText
+            android:id="@+id/Cin"
+            android:layout_width="136dp"
+            android:layout_height="39dp"
+            android:layout_marginStart="11dp"
+            android:layout_marginLeft="11dp"
+            android:layout_marginTop="16dp"
+            android:background="#F3EFEF"
+            android:text="Start Date"
+            android:textColor="#000000"
+            android:textColorHint="#000000"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/textView8" />
+
+        <EditText
+            android:id="@+id/Cout"
+
+            android:layout_width="136dp"
+            android:layout_height="39dp"
+            android:layout_marginTop="16dp"
+            android:layout_marginEnd="11dp"
+            android:layout_marginRight="11dp"
+            android:background="#F3EFEF"
+            android:text="End Date"
+            android:textColor="#000000"
+            android:textColorHint="#000000"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/textView8" />
+
+        <TextView
+            android:id="@+id/testDays"
+            android:layout_width="259dp"
+            android:layout_height="39dp"
+            android:layout_marginStart="26dp"
+            android:layout_marginLeft="26dp"
+            android:layout_marginTop="15dp"
+            android:layout_marginEnd="3dp"
+            android:layout_marginRight="3dp"
+            android:background="#F3EFEF"
+            android:text="Total Days"
+            android:textColor="#000000"
+            android:textColorHint="#000000"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toEndOf="@+id/textView6"
+            app:layout_constraintTop_toBottomOf="@+id/calTotal" />
+
+        <TextView
+            android:id="@+id/totalCost"
+            android:layout_width="259dp"
+            android:layout_height="39dp"
+            android:layout_marginStart="26dp"
+            android:layout_marginLeft="26dp"
+            android:layout_marginTop="24dp"
+            android:layout_marginEnd="3dp"
+            android:layout_marginRight="3dp"
+            android:background="#F3EFEF"
+            android:text="Total Costs"
+            android:textColor="#000000"
+            android:textColorHint="#000000"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toEndOf="@+id/textView7"
+            app:layout_constraintTop_toBottomOf="@+id/testDays" />
+
+        <Button
+            android:id="@+id/btn_send"
+            android:layout_width="258dp"
+            android:layout_height="47dp"
+            android:layout_marginStart="77dp"
+            android:layout_marginLeft="77dp"
+            android:layout_marginTop="25dp"
+            android:layout_marginEnd="77dp"
+            android:layout_marginRight="77dp"
+            android:text="Confirm Booking"
+            android:textAllCaps="false"
+            app:backgroundTint="#00BCD4"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/textView7" />
+
+        <Button
+            android:id="@+id/btn_getdata"
+            android:layout_width="258dp"
+            android:layout_height="47dp"
+
+            android:layout_marginStart="77dp"
+            android:layout_marginLeft="77dp"
+            android:layout_marginTop="20dp"
+            android:layout_marginEnd="77dp"
+            android:layout_marginRight="77dp"
+            android:text="Check The Data"
+            android:textAllCaps="false"
+            app:backgroundTint="#00BCD4"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/btn_send" />
+
+        <Button
+            android:id="@+id/calTotal"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="150dp"
+            android:layout_marginLeft="150dp"
+            android:layout_marginTop="24dp"
+            android:layout_marginEnd="150dp"
+            android:layout_marginRight="150dp"
+            android:text="Pick Date"
+            app:backgroundTint="#00BCD4"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/textView5" />
+
+        <TextView
+            android:id="@+id/textView"
+            android:layout_width="102dp"
+            android:layout_height="39dp"
+            android:layout_marginStart="16dp"
+            android:layout_marginLeft="16dp"
+            android:layout_marginTop="62dp"
+            android:background="#F3EFEF"
+            android:text="Customer Name:"
+            android:textColor="#3F51B5"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent" />
+    </androidx.constraintlayout.widget.ConstraintLayout>
+</ScrollView>

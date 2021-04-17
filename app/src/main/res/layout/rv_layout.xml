@@ -1,0 +1,177 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:orientation="vertical">
+
+    <TextView
+        android:id="@+id/textView14"
+        android:layout_width="59dp"
+        android:layout_height="30dp"
+        android:layout_marginStart="5dp"
+        android:layout_marginLeft="5dp"
+        android:layout_marginTop="20dp"
+        android:text="Customer Name"
+        app:layout_constraintStart_toEndOf="@+id/textView10"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <TextView
+        android:id="@+id/textView12"
+        android:layout_width="59dp"
+        android:layout_height="30dp"
+        android:layout_marginStart="5dp"
+        android:layout_marginLeft="5dp"
+        android:layout_marginTop="20dp"
+        android:text="Customer Name"
+        app:layout_constraintStart_toEndOf="@+id/textView10"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <TextView
+        android:id="@+id/textView11"
+        android:layout_width="114dp"
+        android:layout_height="30dp"
+        android:layout_marginStart="8dp"
+        android:layout_marginLeft="8dp"
+        android:layout_marginTop="20dp"
+        android:text="Customer Name"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <TextView
+        android:id="@+id/tv_name"
+        android:layout_width="114dp"
+
+        android:layout_height="54dp"
+        android:layout_marginStart="8dp"
+        android:layout_marginLeft="8dp"
+        android:layout_marginTop="60dp"
+        android:padding="10sp"
+        android:text="Cust Name"
+        android:textColor="@color/design_default_color_primary"
+        android:textSize="18sp"
+        android:textStyle="bold"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <TextView
+        android:id="@+id/tv_phoneN"
+        android:layout_width="85dp"
+        android:layout_height="54dp"
+        android:layout_marginStart="5dp"
+        android:layout_marginLeft="5dp"
+        android:layout_marginTop="60dp"
+        android:padding="5sp"
+        android:text="phone No2"
+        android:textColor="@color/design_default_color_primary"
+        android:textSize="16sp"
+        app:layout_constraintStart_toEndOf="@+id/tv_name"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <TextView
+        android:id="@+id/tv_numG"
+        android:layout_width="59dp"
+        android:layout_height="54dp"
+        android:layout_marginStart="5dp"
+        android:layout_marginLeft="5dp"
+        android:layout_marginTop="60dp"
+        android:padding="5sp"
+        android:text="Number of Guests"
+        android:textColor="@color/design_default_color_primary"
+        android:textSize="16sp"
+        app:layout_constraintStart_toEndOf="@+id/tv_phoneN"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <TextView
+        android:id="@+id/tv_custR"
+        android:layout_width="267dp"
+        android:layout_height="84dp"
+        android:layout_marginTop="15dp"
+        android:layout_marginEnd="15dp"
+        android:layout_marginRight="15dp"
+        android:padding="5sp"
+        android:text="Request"
+        android:textColor="@color/design_default_color_primary"
+        android:textSize="16sp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/tv_name" />
+
+    <TextView
+        android:id="@+id/tv_bDay"
+        android:layout_width="55dp"
+        android:layout_height="54dp"
+        android:layout_marginStart="5dp"
+        android:layout_marginLeft="5dp"
+        android:layout_marginTop="60dp"
+        android:padding="5sp"
+        android:text="Number of Days"
+        android:textColor="@color/design_default_color_primary"
+        android:textSize="16sp"
+        app:layout_constraintStart_toEndOf="@+id/tv_numG"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <TextView
+        android:id="@+id/tv_tCost"
+        android:layout_width="54dp"
+        android:layout_height="54dp"
+        android:layout_marginStart="5dp"
+        android:layout_marginLeft="5dp"
+        android:layout_marginTop="60dp"
+        android:layout_marginEnd="15dp"
+        android:layout_marginRight="15dp"
+        android:padding="5sp"
+        android:text="total costs"
+        android:textColor="@color/design_default_color_primary"
+        android:textSize="16sp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toEndOf="@+id/tv_bDay"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <TextView
+        android:id="@+id/textView10"
+        android:layout_width="85dp"
+        android:layout_height="30dp"
+        android:layout_marginStart="128dp"
+        android:layout_marginLeft="128dp"
+        android:layout_marginTop="20dp"
+        android:text="Customer Name"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <TextView
+        android:id="@+id/textView15"
+        android:layout_width="55dp"
+        android:layout_height="30dp"
+        android:layout_marginStart="5dp"
+        android:layout_marginLeft="5dp"
+        android:layout_marginTop="20dp"
+        android:text="TextView"
+        app:layout_constraintStart_toEndOf="@+id/textView14"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <TextView
+        android:id="@+id/textView16"
+        android:layout_width="54dp"
+        android:layout_height="30dp"
+        android:layout_marginStart="5dp"
+        android:layout_marginLeft="5dp"
+        android:layout_marginTop="20dp"
+        android:layout_marginEnd="15dp"
+        android:layout_marginRight="15dp"
+        android:text="TextView"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toEndOf="@+id/textView15"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <TextView
+        android:id="@+id/textView17"
+        android:layout_width="111dp"
+        android:layout_height="84dp"
+        android:layout_marginStart="8dp"
+        android:layout_marginLeft="8dp"
+        android:layout_marginTop="15dp"
+        android:text="TextView"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/tv_name" />
+</androidx.constraintlayout.widget.ConstraintLayout>
