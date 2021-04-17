@@ -102,6 +102,7 @@ class booking : AppCompatActivity() {
             testDays.setText("")
             totalCost.setText("")
 
+
         } else {
             Toast.makeText(applicationContext, "All Field Required", Toast.LENGTH_LONG).show()
         }
